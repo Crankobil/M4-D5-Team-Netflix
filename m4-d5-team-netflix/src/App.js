@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import MyNavbar from './Components/MyNavbar';
+import "bootstrap/dist/css/bootstrap.min.css";
+import RowMovies from './Components/RowMovies'
+import MyFooter from './Components/MyFooter';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+    <div className="body-div">
+      <MyNavbar />
+      <RowMovies rowTitle="Matrix" rowQuery="matrix" />
+      <RowMovies rowTitle="HarryPotter" rowQuery="harry%20potter" />
+      <RowMovies rowTitle="Mission Impossible" rowQuery="mission+impossible" />
+      <MyFooter/>
+      
     </div>
-  );
+    </div>
+  )
 }
 
 export default App;

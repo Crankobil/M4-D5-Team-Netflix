@@ -1,38 +1,63 @@
 .App {
-  text-align: center;
+  background-color: #141414;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-footer{
+  background-color: #343a34;
+  padding: 3rem;
+  color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-bottom{
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul li a{
+  color: darkgray;
+}
+
+ul li a:hover{
+  color: aliceblue;
+}
+
+.netflix-nav-dark{
+background-color: #141414;
+}
+
+.navBrand{
+  height:50px;
+}
+
+.white-border {
+  border: solid 1px white;
+  background-color: black;
+}
+
+.nav-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sections {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+svg {
+  fill: white;
 }
+
+.NavDropdown {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid grey;
+}
+
+.NavDropdown.Item {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: transparent;
+  }
+
