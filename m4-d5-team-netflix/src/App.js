@@ -1,3 +1,4 @@
+
 import './App.css';
 import MyNavbar from './Components/MyNavbar';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,6 +20,7 @@ function App() {
       <MyFooter/>
       
     </div>
+
     </div>
   )
 }
