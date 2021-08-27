@@ -15,7 +15,7 @@ class MovieSingle extends Component {
 
           <div>
             <Card key={this.props.movieObj.imdbID} onClick={() => this.setState({ selected: !this.state.selected })}
-              style={{ border: this.state.selected ? '3px solid green' : 'none' }}>
+              style={{ border: this.state.selected ? '3px solid red' : 'none' }}>
               <a href="#Home">
                 <img
                   src={this.props.movieObj.Poster}
@@ -26,7 +26,6 @@ class MovieSingle extends Component {
             </Card>
           </div>
 
-          
         </div>
 
 

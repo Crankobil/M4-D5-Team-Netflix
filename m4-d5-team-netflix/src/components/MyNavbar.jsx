@@ -1,45 +1,64 @@
-import React from 'react'
-import {Navbar,Nav} from 'react-bootstrap'
-import { Bell, Search} from 'react-bootstrap-icons';
-import Image from 'react-bootstrap/Image'
+import { Navbar, Form, FormControl, Nav,} from "react-bootstrap";
 import logo from "../assets/netflix_logo.png"
+import '../App.css'
 
-export default function MyNavbar(){
-    return(
-    <Navbar bg="dark" >
-      <Nav defaultActiveKey="/home" as="ul">
-        <Image
-             src={logo}  
-             width="95"
-             height="30"
+const MyNavbar = () => {
+  return (
+      <>
+  <Navbar variant="dark">
+      <Navbar.Brand>
+        <a href="#home">
+          <img
+            src={logo}
+            width="80rem"
+            alt=""
+            className=" navbar-brand"
+          />
+        </a>
+      </Navbar.Brand>
+      <Nav className="mr-auto">
+        <a className="nav-link active" href="#home">
+          Home <span className="sr-only">(current)</span>
+        </a>
+        <a className="nav-link" href="#tvshows">
+          TV Shows
+        </a>
+        <a className="nav-link" href="#movies">
+          Movies
+        </a>
+        <a className="nav-link" href="#recentlyAdded">
+          Recently Added
+        </a>
+        <a className="nav-link" href="#mylist">
+          My List
+        </a>
+      </Nav>
+      <Form inline>
+        <FormControl
+          bg="dark"
+          variant="light"
+          type="text"
+          placeholder="Search"
+          className="mr-sm-2"
         />
-      <Nav.Item as="li">
-         <Nav.Link  href="/home" className="font-color">Home</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-          <Nav.Link eventKey="link-1" className="font-color">TV Shows</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-          <Nav.Link eventKey="link-2"className="font-color">Movies</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-          <Nav.Link eventKey="link-2"className="font-color">Recently Added</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-          <Nav.Link eventKey="link-2"className="font-color">My List</Nav.Link>
-      </Nav.Item>
-</Nav>
-<Nav as="ul" className="nav-left">
-      <Nav.Item as="li">
-         <Search className="mr-2 " color="white" size={20}></Search>
-      </Nav.Item>
-      <Nav.Item as="li">
-          <Nav.Link eventKey="link-2"className="font-color">KIDS</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-         <Bell color="white" size={20}/>
-      </Nav.Item>
-  </Nav> 
+      </Form>
+    </Navbar>
 
-</Navbar>
-) }
+    
+    <Navbar variant="dark">
+      <Navbar.Brand>
+        <h3>TV Shows</h3>
+
+      </Navbar.Brand>
+      <Nav className="mr-auto">
+      </Nav>
+      
+    </Navbar>
+
+    </>
+
+  );
+};
+
+export default MyNavbar;
+

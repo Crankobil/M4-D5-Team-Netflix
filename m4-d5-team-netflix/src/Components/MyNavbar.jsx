@@ -1,4 +1,4 @@
-import { Navbar, Form, FormControl, Nav, Container} from "react-bootstrap";
+import { Navbar, Form, FormControl, Nav,} from "react-bootstrap";
 import logo from "../assets/netflix_logo.png"
 import '../App.css'
 
@@ -44,7 +44,7 @@ const MyNavbar = () => {
       </Form>
     </Navbar>
 
-    <Container className="container-fluid mb-4">
+    
     <Navbar variant="dark">
       <Navbar.Brand>
         <h3>TV Shows</h3>
@@ -52,8 +52,8 @@ const MyNavbar = () => {
       </Navbar.Brand>
       <Nav className="mr-auto">
       </Nav>
+      
     </Navbar>
-    </Container>
 
     </>
 
